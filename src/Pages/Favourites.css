@@ -1,0 +1,25 @@
+.favourites-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.fav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remove-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.remove-btn:hover {
+  background: darkred;
+}

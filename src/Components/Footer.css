@@ -1,0 +1,161 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ddd;
+  max-width: 400px;
+  margin: auto;
+}
+
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-social a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.footer-social img {
+  width: 24px;       
+  height: 24px;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.newsletter{
+    padding-top: 15px;
+}
+
+.sub-btn{
+    height: 38px;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 10px;  
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sub-btn:hover{
+    background-color: #ff7f50;
+    color: white;
+}
+
+.newsletter input[type="email"]{
+    width: 250px;
+    height: 33px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    padding-left: 20px;
+}
+
+.center-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f855a;
+  color: white;
+  padding: 20px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: popupFade 0.3s ease-in-out;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.logo img{
+  height: 80px;
+  width: auto;
+}
+
+.logo{
+  display: flex;
+  margin-left: 520px;
+}
+
+/* Hide logo immediately when reducing screen size */
+@media (max-width: 1200px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-logo {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .sub-btn {
+    width: 100%;
+    max-width: 280px;
+    margin-left: 0;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

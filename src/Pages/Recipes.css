@@ -1,0 +1,47 @@
+.recipes-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.recipes-container h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.searchbar input[type=text]{
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  border: solid 0.5px rgb(173, 172, 172);
+  padding-left: 20px;
+}
+
+.searchbar button{
+  width: 60px;
+  height: 28px;
+  border-radius: 5px;
+  border: solid 0.5px grey;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.searchbar button:hover{
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

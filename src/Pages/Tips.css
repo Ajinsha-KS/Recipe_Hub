@@ -1,0 +1,34 @@
+.tips-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.tips-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.tips-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.tip-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-card h3 {
+  color: #e67e22;
+  margin-bottom: 8px;
+}
